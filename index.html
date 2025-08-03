@@ -3,14 +3,544 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cheruiyot Evans Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Evans Che || Home</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <h1>Portfolio</h1>
-      </nav>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <!-- <img src="./images/logo.svg" class="nav-logo" alt="" /> -->
+          <h1 class="nav-logo-head">Evans <span class="special">Che</span></h1>
+        </div>
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#service">services</a></li>
+          <li><a href="#project">projects</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <!-- Hidden checkbox to toggle sidebar -->
+    <input type="checkbox" id="sidebar-toggle" hidden />
+
+    <!-- Button to open sidebar -->
+    <label for="sidebar-toggle" class="sidebar-open-btn nav-btn" id="nav-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <!-- Close button (label linked to checkbox) -->
+        <label for="sidebar-toggle" class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </label>
+
+        <ul class="sidebar-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#service">services</a></li>
+          <li><a href="#project">projects</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.squarespace.com" class="social-icon">
+              <i class="fab fa-squarespace"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.behance.net" class="social-icon">
+              <i class="fab fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- end of sidebar -->
+    <!-- header -->
+    <header class="hero">
+      <div class="section-center hero-center">
+        <article class="hero-info">
+          <div class="underline"></div>
+          <h1>i'm Evans</h1>
+          <h4>fullstack web developer</h4>
+          <a href="#contact" class="btn hero-btn">contact me</a>
+          <ul class="social-icons hero-icons">
+            <!-- single item -->
+            <li>
+              <a href="https://www.twitter.com" class="social-icon">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <!-- end of single item -->
+            <!-- single item -->
+            <li>
+              <a
+                href=" https://www.linkedin.com/cheruevans"
+                class="social-icon"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <!-- end of single item -->
+            <!-- single item -->
+            <li>
+              <a href="https://www.twitter.com" class="social-icon">
+                <i class="fab fa-squarespace"></i>
+              </a>
+            </li>
+            <!-- end of single item -->
+            <!-- single item -->
+            <li>
+              <a href="https://www.twitter.com" class="social-icon">
+                <i class="fab fa-behance"></i>
+              </a>
+            </li>
+            <!-- end of single item -->
+            <!-- single item -->
+            <li>
+              <a href="https://www.twitter.com" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <!-- end of single item -->
+          </ul>
+        </article>
+        <article class="hero-img">
+          <img
+            src="./images/hero-portfolio.jpg"
+            class="hero-photo"
+            alt="Evans Cheruiyot"
+          />
+        </article>
+      </div>
     </header>
+    <!-- end of header -->
+    <!-- about -->
+    <section class="section about" id="about">
+      <div class="section-center about-center">
+        <!-- about img -->
+        <article class="about-img">
+          <img src="./images/hero-portfolio.jpg" class="hero-photo" alt="" />
+        </article>
+        <!-- about info -->
+        <article class="about-info">
+          <!-- section title -->
+          <div class="section-title about-title">
+            <h2>about</h2>
+            <div class="underline"></div>
+          </div>
+          <!-- section title -->
+          <!-- lorem 40 -->
+          <p>
+            Hi, I’m Cheruiyot Evans — a junior full-stack developer at the
+            beginning of an exciting journey into the world of web development
+          </p>
+          <!-- lorem 40 -->
+          <p>
+            I started by mastering the core building blocks of the web: HTML and
+            CSS, crafting clean and responsive layouts. As I deepen my
+            understanding of JavaScript, I'm steadily progressing toward
+            becoming a full-stack developer.
+          </p>
+          <!-- <a href="about.html" class="btn about-btn">about me</a> -->
+        </article>
+      </div>
+    </section>
+    <!-- end of about about -->
+    <!-- services -->
+    <section class="section bg-grey" id="service">
+      <div class="section-title">
+        <h2>services</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="section-center services-center">
+        <!-- single  service-->
+        <article class="service">
+          <i class="fas fa-code service-icon"></i>
+          <h4>web development</h4>
+          <div class="underline"></div>
+          <p>
+            I build websites using modern web technologies, focusing on both
+            function and performance. From structuring content with HTML,
+            styling with CSS, and adding interactivity with JavaScript, I turn
+            designs into fully working, responsive websites that are fast and
+            accessible.
+          </p>
+        </article>
+        <!-- end of single service -->
+        <!-- single  service-->
+        <article class="service">
+          <!-- fab -->
+          <i class="fab fa-sketch service-icon"></i>
+          <h4>web design</h4>
+          <div class="underline"></div>
+          <p>
+            I create clean, responsive, and visually appealing website designs
+            that provide a great user experience across all devices. My goal is
+            to design layouts that are not only beautiful but also easy to
+            navigate and aligned with your brand’s identity.
+          </p>
+        </article>
+        <!-- end of single service -->
+        <!-- single  service-->
+        <article class="service">
+          <!-- fab -->
+          <i class="fab fa-android service-icon"></i>
+          <h4>app design</h4>
+          <div class="underline"></div>
+          <p>
+            I design mobile and web application interfaces that are intuitive,
+            user-friendly, and visually engaging. Whether it’s wireframing an
+            idea or creating polished screens, I focus on delivering designs
+            that make the user’s experience simple and enjoyable.
+          </p>
+        </article>
+        <!-- end of single service -->
+      </div>
+    </section>
+    <!-- end of services -->
+    <!-- projects -->
+    <section class="section projects" id="project">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>upcoming projects</h2>
+        <div class="underline"></div>
+        <p class="projects-text">
+          I'm currently working on a series of beginner-friendly projects to
+          strengthen my front-end and full-stack development skills. These
+          include practical applications like a tour booking site, an e-commerce
+          store, a hotel management system, and a tourism portal. Each project
+          helps me apply what I'm learning in real-world scenarios — from layout
+          and design to interactivity and basic functionality.
+        </p>
+      </div>
+      <!-- end of section title -->
+      <div class="section-center projects-center">
+        <!-- single project -->
+        <article class="project">
+          <img src="./images/e-commerce.jpg" alt="" class="project-img" />
+          <div class="project-info">
+            <h4>e-commerce store</h4>
+            <p>upcoming</p>
+          </div>
+        </article>
+
+        <!-- end of single project -->
+        <!-- single project -->
+        <article class="project">
+          <img src="./images/tours-mara.jpg" alt="" class="project-img" />
+          <div class="project-info">
+            <h4>visit kenya booking website</h4>
+            <p>upcoming</p>
+          </div>
+        </article>
+        <!-- end of single project -->
+        <!-- single project -->
+        <article class="project">
+          <img src="./images/hotel-cms.jpg" alt="" class="project-img" />
+          <div class="project-info">
+            <h4>hotel management system</h4>
+            <p>upcoming</p>
+          </div>
+        </article>
+        <!-- end of single project -->
+        <!-- single project -->
+        <article class="project">
+          <img
+            src="./images/android-mobile-design.jpg"
+            alt=""
+            class="project-img"
+          />
+          <div class="project-info">
+            <h4>Android mobile app design</h4>
+            <p>upcoming</p>
+          </div>
+        </article>
+        <!-- end of single project -->
+      </div>
+    </section>
+    <!-- endo of projects -->
+    <!-- connect -->
+    <section class="connect" id="contact">
+      <div class="section-title">
+        <h1>contact</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="video-banner">
+        <div class="section-title">
+          <h2>let's get in touch</h2>
+          <div class="underline"></div>
+        </div>
+        <p class="video-text">
+          I'm always open to collaboration, feedback, or just a friendly chat
+          about web development. Whether you have a project in mind or simply
+          want to connect, feel free to reach out — I’d love to hear from you!
+        </p>
+
+        <button class="btn">contact me</button>
+      </div>
+      <div class="page-info section-center">
+        <p>
+          If you'd like to get in touch, feel free to send email to
+          <a href="mailto:email@email.com">cheruiyot.evans.dev@gmail.com</a>
+        </p>
+        <p>
+          You can also reach me on Linkedin at
+          <a href="https://www.linkedin.com"
+            >https://www.linkedin.com/cheruevans</a
+          >
+        </p>
+      </div>
+    </section>
+    <!-- end of connect -->
+    <!-- skills renewed -->
+    <section class="section bg-grey">
+      <div class="section-title">
+        <h2>skills</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="section-center services-center">
+        <!-- single  service-->
+        <article class="service">
+          <i class="fas fa-code"></i>
+          <h4>html & css</h4>
+          <div class="underline"></div>
+          <p>
+            I have a solid foundation in HTML5 and CSS3, using best practices to
+            write clean, semantic, and accessible code. I’m comfortable building
+            well-structured web pages and layouts using Flexbox and Grid, and I
+            pay close attention to design details, spacing, and consistency. I
+            also understand how to organize CSS for maintainability and
+            scalability as projects grow.
+          </p>
+        </article>
+        <!-- end of single service -->
+        <!-- single  service-->
+        <article class="service">
+          <!-- fab -->
+          <i class="fab fa-js-square"></i>
+          <h4>javaScript</h4>
+          <div class="underline"></div>
+          <p>
+            I’m currently developing my skills in JavaScript and have a good
+            grasp of core concepts like variables, functions, arrays,
+            conditionals, loops, and basic DOM manipulation. I’ve used
+            JavaScript to add simple interactivity to web pages — such as toggle
+            menus and form validation — and I’m steadily moving toward deeper
+            topics like events, ES6 features, and asynchronous operations.
+          </p>
+        </article>
+        <!-- end of single service -->
+        <!-- single  service-->
+        <article class="service">
+          <!-- fab -->
+          <i class="fas fa-mobile-alt"></i>
+          <h4>responsive design</h4>
+          <div class="underline"></div>
+          <p>
+            Creating responsive layouts is one of my top priorities. I use media
+            queries, relative units, and mobile-first design principles to
+            ensure websites look and function well on all screen sizes — from
+            desktops to smartphones. I focus on making sure the user experience
+            remains consistent, accessible, and visually clean across devices.
+          </p>
+        </article>
+        <!-- end of single service -->
+      </div>
+    </section>
+    <!-- end of kills -->
+
+    <!-- blog -->
+    <section class="section blog">
+      <div class="section-title">
+        <h2>blog</h2>
+        <div class="underline"></div>
+      </div>
+      <!-- blog center -->
+      <div class="section-center blog-center">
+        <!-- single article -->
+        <article>
+          <div class="card">
+            <!-- card front -->
+            <div class="card-side card-front">
+              <img src="./images/html.jpg" alt="" />
+              <div class="card-info">
+                <h4>getting started with HTML & CSS</h4>
+                <p>
+                  A beginner-friendly guide to building your first web page. I
+                  share how I learned the basics of HTML structure and CSS
+                  styling, with tips for writing clean, readable code and
+                  creating responsive layouts.
+                </p>
+                <div class="card-footer">
+                  <img src="./images/hero-portfolio.jpg" alt="author image" />
+                  <p>10 min read</p>
+                </div>
+              </div>
+            </div>
+            <!-- card back -->
+            <div class="card-side card-back">
+              <button class="btn">read more</button>
+            </div>
+          </div>
+        </article>
+        <!-- end of single article -->
+        <!-- single article -->
+        <article>
+          <div class="card">
+            <!-- card front -->
+            <div class="card-side card-front">
+              <img src="./images/javascript.jpg" alt="" />
+              <div class="card-info">
+                <h4>learning javaScript: my first steps</h4>
+                <p>
+                  In this post, I walk through my early experience with
+                  JavaScript — from understanding variables and functions to
+                  adding simple interactivity like buttons and dropdowns. A
+                  great read for fellow beginners.
+                </p>
+                <div class="card-footer">
+                  <img src="./images/hero-portfolio.jpg" alt="author image" />
+                  <p>6 min read</p>
+                </div>
+              </div>
+            </div>
+            <!-- card back -->
+            <div class="card-side card-back">
+              <button class="btn">read more</button>
+            </div>
+          </div>
+        </article>
+        <!-- end of single article -->
+        <!-- single article -->
+        <article>
+          <div class="card">
+            <!-- card front -->
+            <div class="card-side card-front">
+              <img src="./images/responsive.jpg" alt="" />
+              <div class="card-info">
+                <h4>why responsive design matters</h4>
+                <p>
+                  Mobile-first design isn’t just a trend — it’s a necessity. I
+                  explain the importance of responsive design, the tools I use
+                  (like Flexbox and media queries), and how I test my layouts on
+                  different devices.
+                </p>
+                <div class="card-footer">
+                  <img src="./images/hero-portfolio.jpg" alt="author image" />
+                  <p>9 min read</p>
+                </div>
+              </div>
+            </div>
+            <!-- card back -->
+            <div class="card-side card-back">
+              <button class="btn">read more</button>
+            </div>
+          </div>
+        </article>
+        <!-- end of single article -->
+        <!-- single article -->
+        <article>
+          <div class="card">
+            <!-- card front -->
+            <div class="card-side card-front">
+              <img src="./images/github.jpg" alt="" />
+              <div class="card-info">
+                <h4>using git & github as a new developer</h4>
+                <p>
+                  Version control can seem intimidating at first, but it's
+                  essential. This post breaks down how I learned Git basics, set
+                  up my first repositories, and started using GitHub to manage
+                  and share my code.
+                </p>
+                <div class="card-footer">
+                  <img src="./images/hero-portfolio.jpg" alt="author image" />
+                  <p>7 min read</p>
+                </div>
+              </div>
+            </div>
+            <!-- card back -->
+            <div class="card-side card-back">
+              <button class="btn">read more</button>
+            </div>
+          </div>
+        </article>
+        <!-- end of single article -->
+      </div>
+    </section>
+    <!-- end of blog -->
+    <footer class="footer">
+      <ul class="social-icons">
+        <!-- single item -->
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fab fa-squarespace"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fab fa-behance"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+      </ul>
+
+      <p>&copy; 2025 Evans Che. All rights reserved.</p>
+    </footer>
   </body>
 </html>
